@@ -22,7 +22,7 @@ export default function Home({events}) {
 
         
            <EventItem key={event.id} event={event} />
-           
+
 
 
 
@@ -43,7 +43,7 @@ export async function getStaticProps(){
   console.log(events)
 
  return{
-  props: { events, },
+  props: { events:events.slice(0,3) },
   revalidate: 10,
  }
 
