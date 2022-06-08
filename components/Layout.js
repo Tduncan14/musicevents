@@ -22,7 +22,7 @@ return(
         <Header />
        { router.pathname === '/' && <Showcase /> }
       <div className={styles.container}>
-          {children}''
+          {children}
       </div>
 
       <Footer/>

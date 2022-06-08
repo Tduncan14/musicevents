@@ -13,6 +13,8 @@ export default function Home({events}) {
        <h1> Upcoming Events</h1>
 
 
+
+
        {
         events.length === 0  && <h3> No events to show</h3>
        }
@@ -27,10 +29,14 @@ export default function Home({events}) {
 
 
        ))}
+
+       {events.length > 0 && (
+         <Link href="/events">
+            <a className="btn-secondary">View All  </a>
+  </Link>)}
    </Layout>
   )
 }
-
 
 
 export async function getStaticProps(){
