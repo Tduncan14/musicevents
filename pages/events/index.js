@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from '../../components/Layout'
 
 
 
@@ -7,9 +8,9 @@ function Eventspage(){
 
 
     return(
-        <div>
+        <Layout title="events">
             <h1>This an events page</h1>
-        </div>
+        </Layout>
     )
 
 }
